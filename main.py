@@ -58,7 +58,7 @@ def podobienstwo_cosinusowe(zapytanie_zredukowane, dokumenty_zredukowane):
         licznik = np.dot(zapytanie_zredukowane, wektor_dokumentu)
         mianownik = np.linalg.norm(zapytanie_zredukowane) * np.linalg.norm(wektor_dokumentu)
         podobienstwo = licznik / mianownik if mianownik != 0 else 0.0 
-        podobienstwa.append(round(podobienstwo, 2))  
+        podobienstwa.append(round(float(podobienstwo), 2))  
     return podobienstwa
 
 # czesc glowna
